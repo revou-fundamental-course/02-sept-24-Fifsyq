@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR MATEMATIKA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+      <div class="logo">
+        <a href="#"><img src="assets/logo-color.png" alt=""></a><br>
+        
+          <ul><li><a href="#"><p style="color: white; font-size: 25px; font-weight: bold;">Home</p></a></li></ul>
+          <ul><li><a href="#"><p style="color: white; font-size: 25px; font-weight: bold">Contact Us</p></a></li></ul>
+          <ul><li><a href="#"><p style="color: white; font-size: 25px; font-weight: bold">About Us</p></a></li></ul>
+      </div>
+    </div>
+
+    <div class ="footer">
+      <h1 style="text-align: center;">Welcome to Form Katik</h1>
+      <p style="text-align: center;">Hai sobat, Selamat datang di Form Katik<br>
+      Sebuah Webs Apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    </div>
+    <div class="bangun-datar">
+      <div class="segitiga" style="text-align: center;"><a href="#">Segitiga</a>
+
+      </div>
+      <div class="jajar-genjang" style="text-align: center;"><a href="#">Jajar Genjang</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column1">
+        <h2 style="text-align: center; background-color: #336A86;">Luas Segitiga</h2>
+        <img src="assets/segitiga.jpg">
+        <p>Rumus Luas Segitiga Yaitu :</p>
+        <p style="font-weight: bold; text-align: center;"> L = 1/2 x A x T</p>
+        <p> Dimana : <br>
+        L = Luas<br>A = Alas<br>T = Tinggi</p>
+        <hr>
+        <p style="font-size: xx-large;text-align: center;">Hitung Luas Segitiga</p>
+        <div class="input-wrapper">
+          <input class="alas" id="panjang-alas" name="panjang-alas" placeholder="Panjang Alas" type="number"/>
+        </div><br>
+        <div class="input-wrapper">
+          <input class="tinggi" id="tinggi" name="tinggi" placeholder="Tinggi" type="number"/>
+        </div><br>
+          <p id="result"></p>
+          <button class="hitung" type="button" onclick="luassegitiga()">HITUNG</button>
+          <br><br><p id="rincianluas"></p>
+          <p id="luas"></p>
+      
+          <button class="reset" type="button" onclick="resetluas()">Reset</button>
+
+      </div>
+      <div class ="column2">
+        <h2 style="text-align: center; background-color: #336A86;">Keliling Segitiga</h2>
+        <img src="assets/segitiga.jpg">
+        <p>Rumus Keliling Segitiga Yaitu :</p>
+        <p style="font-weight: bold; text-align: center;"> K = S1 + S2 + S3</p>
+        <p> Dimana : <br>
+        K = Keliling<br>S1 = Sisi A<br>S2 = Sisi B<br>S3 = Sisi C</p>
+        <hr>
+        <p style="font-size: xx-large;text-align: center;">Hitung Keliling Segitiga</p>
+        <div class="input-wrapper">
+          <input class="s1" id="sisi-a" name="sisi-a" type="number" placeholder="Sisi A"/>
+        </div><br>
+      
+        <div class="input-wrapper">
+          <input class="s2" id="sisi-b" name="sisi-b" type="number" placeholder="Sisi B"/>
+        </div><br>
+
+        <div class="input-wrapper"> 
+          <input class="s3" id="sisi-c" name="sisi-c" type="number" placeholder="Sisi C"/>
+        </div><br>
+          <p id="result"></p>
+          <button class="hitung" type="button" onclick="kelilingsegitiga()">HITUNG</button>
+          <p id="rinciankeliling"></p>
+          <p id="keliling"></p>
+
+          <button class="reset" type="button" onclick="resetkeliling()">Reset</button>
+        </div>
+    </div>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
